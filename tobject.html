@@ -1,0 +1,57 @@
+<!-- practice for objects -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//  var bellBoy1={
+//     name:"timmy",
+//     age:19,
+//     workPermit:true,
+//     languages:['hindi','english']
+//  }
+//  console.log(bellBoy1.languages)
+//  console.log(bellBoy1.name)
+
+// var bellBoy={
+//     name:"jimmy",
+//     age:20,
+//     workPermit:false,
+//     languages:['hindi','english','punjabi'],
+//     moveSuitCase:function(){
+//         alert("may i take your suitcase?")
+//         pickUpSuitcase();
+//         move()
+//     }
+// }
+
+
+// constructor function
+function BellBoy(name,age,workPermit,languages){
+    this.name=name,
+    this.age=age,
+    this.workPermit,
+    this.languages=languages
+    this.moveSuitCase=function(){
+        alert("may i take your suitcase?")
+        pickUpSuitcase();
+        move()
+    }
+} 
+// adding property to constructor function can't be done in this way you have to add it to constructor function itself
+BellBoy.nationality="xyz"
+
+
+var bellBoy1=new BellBoy('timm',20,true,['english','hindi'])
+console.log(bellBoy1.name)
+// can also add a property to a single object
+bellBoy1.fullname="sakshi patel"
+
+    </script>
+</body>
+</html>
